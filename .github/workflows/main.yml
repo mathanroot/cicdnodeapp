@@ -9,6 +9,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
+    #checkout 
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
@@ -23,11 +24,11 @@ jobs:
      #run tests
     - name: Run tests
       run: npm test
-    #login to dockerhub
+    #login to dockerhub donot insert the docker token and username for this line
     - name: LOG IN DOCKERHUB
       run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
 
-    #builddockerimage
+    #build docker image
     - name: Build Docker image
       run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/nodeapp:latest .
 
