@@ -4,10 +4,13 @@ app.js contains the coding files
 package.json packages for the program
 Dockerfile for create image 
 
-Then upload a files to new repo,
-write a workflows for CI/CD
+Then upload a files to repo,
 
-Then image pushed to Dockerhub
+write a workflows for CI/CD in Github actions
+
+After successfully completed actions,
+
+Image pushed to Dockerhub
 
 Pull image to local machine 
 
