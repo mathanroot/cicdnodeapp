@@ -1,5 +1,5 @@
 Automate Code Deployment Using CI/CD Pipeline (GitHub Actions)
-
+I have create a simple node js project for CI/CD Pipeline
 In this project,
 FIRST CREATE A REPO 
 THEN WRITE A FILES (LIKE app.js,package.json,Dockerfile)
