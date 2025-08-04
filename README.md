@@ -17,7 +17,7 @@ Pull image to local machine
 Run the image with port
 
 
-
+Then run like this,
 # cicdnodeapp
 <img width="1731" height="1095" alt="image" src="https://github.com/user-attachments/assets/bbe242b1-aa0f-4b6f-8962-21e46f875dd2" />
 
