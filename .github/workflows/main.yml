@@ -18,17 +18,17 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: 18
-      #installdependencies
+      #for install dependencies
     - name: Install dependencies
       run: npm install
-     #run tests
+     #for run tests
     - name: Run tests
       run: npm test
-    #login to dockerhub donot insert the docker token and username for this line
+    #for login to dockerhub donot insert the docker token and username for this line 
     - name: LOG IN DOCKERHUB
       run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
 
-    #build docker image
+    #for build docker image
     - name: Build Docker image
       run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/nodeapp:latest .
 
